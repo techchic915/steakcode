@@ -1,0 +1,316 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+} 
+body {
+	background: #4e1c03;
+	font: 14px/20px Arial, San-Serif;
+	color: #ef6b00;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 5% 0;
+}
+h2 {
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%; 
+}
+h2.normal {
+	text-decoration: none;
+	line-height: 280%;
+	padding-left: 2%; 
+	}
+h2.menu {
+	text-decoration: none;
+	text-align: center;
+	line-height: 280%;
+	padding-left: 2%;
+	padding: 2%; 
+	font-size: 250%;
+	margin-top: -5%;
+
+
+}
+h3 {
+	line-height: 110%;
+	padding: 5% 0
+}
+p {
+	padding: 1%;
+}
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+header {
+	background: #ef6b00;
+	width: 100%;
+	height: 86px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+	position: fixed;
+}
+#logo {
+	margin: 10px;
+	float: left;
+	width: 220px;
+	height: 70px;
+	background: url(assets/logo.png) no-repeat center;
+}
+nav {
+	float: right;
+	padding: 35px 20px 20px 0;
+}
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
+}
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+ul {
+	list-style: none; 
+}
+nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+.current {
+	color: #fff;
+	text-decoration: underline;
+}
+#doc {
+	margin: 40px 0;
+}
+#content {
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 110px;
+}
+.blueberry {
+	max-width: 1300px;
+	margin-top: 110px;
+	margin: 0;
+}
+.banner {
+	margin: 0;
+	width: 100%;
+	margin-top: 110px;
+}
+section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+.clear {
+	clear: both;
+}
+article {
+	float: left;
+	margin: 0 auto;
+	width: 40%;
+	height: auto;
+	padding: 3%;
+}
+aside {
+	float: right;
+	margin: 0 auto;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+	margin-right: 10%;
+}
+ul.steak li {
+	padding-left: 3%;
+}
+footer {
+	background: url(assets/texture.jpg);
+	width: 100%;
+	overflow: hidden;
+	opacity: .90;
+}
+footer p, footer h3 {
+	color: #fff;
+}
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
+ul.social.li {
+	display: inline;
+}
+ul.social li img {
+	height: 50px;
+}
+footer.second {
+	border-top: 1px solid #fff;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+h1.normal {
+	text-align: center;
+	margin-top: -7%;
+	font-size: 350%;
+
+}
+article, aside {
+	margin-top: -5%;
+}
+
+section.photos {
+	margin-top: -2%;
+}
+picture {
+	float: left;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+	padding: 3%;
+	margin-left: 11%;
+}
+section.why {
+	width: 35%;
+	float: left;
+	margin: 1% 1%;
+	margin-left: 10%;
+	text-align: center;
+}
+section.ribs {
+	background: url(assets/ribs.jpg);
+	margin: 0 auto;
+	width: 100%;
+}
+p.why, section.why {
+	color: #fff;
+	opacity: 1.0;
+}
+p.event, h2.event {
+	text-align: left;
+	text-decoration: none;
+	color: #ef6b00;
+}
+h2.event {
+	margin-left: -1%;
+}
+section.event {
+	margin: 0 auto;
+	width: 100%;
+}
+p.event2, h2.event2 {
+	text-align: left;
+	text-decoration: none;
+	color: #ef6b00;
+	margin-left: 2%;
+}	
+/* ----------Mobile Version ---------------- */
+@media screen and (max-width: 478px) {
+	 body {
+	 	position: absolute;
+	 }
+	 header{
+	 	position: fixed;
+	 }
+}
+@media screen and (max-width: 720px) {
+	header {
+		position: fixed;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+
+	#logo {
+		margin: 10px;
+		margin-left: 10px;
+		padding-left: 100px;
+		float: left;
+		width: 130px;
+		height: 70px;
+		background: url(assets/logo.png) no-repeat center;
+
+	
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: fixed;
+		padding: 20px;
+		background: #ef6b00;
+		border: 1px solid: #fff;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 2px 0 2px 2px;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+	nav:hover ul {
+		display: block;
+	}
+	section {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	article {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	aside {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	section.photos {
+		margin-top: 5%;
+	}
+	section.why {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	}
+	h1.normal {
+	text-align: center;
+	margin-top: -7%;
+	font-size: 250%;
+}
+p.event2, h2.event2 {
+	text-align: left;
+	text-decoration: none;
+	color: #ef6b00;
+	margin-left: 0%;
+}

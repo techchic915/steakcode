@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0; 
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-image: url("http://wallpaperwarrior.com/wp-content/uploads/2016/05/Black-and-White-Wallpaper-15.jpg");
+}
+.container {
+  display: inline-block;
+  padding: 10px;
+  color: #eee;
+  margin: auto;
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  height: 1000px;
+}
+h1 {
+	text-align: left;
+	margin-left: 3%;
+	line-height: 120%;
+	font-family: 'Francois One', sans-serif;
+	margin: 10px;
+	float: left;
+	font-size: 250%;
+}
+header {
+	width: 100%;
+	height: 86px;
+	z-index: 0.9;
+}
+#menu-icon {
+	background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
+	display: hidden;
+	width: 40px;
+	height: 40px;
+} 
+nav {	
+    float: right;
+    padding: 35px 20px 20px 0;
+    margin-top: -5px;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    float: left;
+    display: inline-block;
+}
+li a {
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    margin-left: 20px;
+}
+a:hover {
+    color: black;
+}
+main {
+    margin: 10px 10px;
+}
+.photo img {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    float: left;
+}
+aside {
+	float: right;
+	margin: -3%;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+	margin-right: 10%;
+}
+/* Media Queries Section */
+
+@media screen and (max-width: 1024px) {
+	.photo img {
+		max-width: 80%;
+		margin-bottom: 15px;
+	}
+	aside {
+		float: left;
+		width: 80%;
+		margin: 0;
+		padding: 0;
+	}
+}
+/* Mobile Version Section */
+
+@media screen and (max-width: 768px) {
+	#menu-icon {
+		display: inline-block;
+    	cursor: pointer;
+    	margin-left: 50%;
+    	margin-top: 2%;
+
+    }
+    nav {
+    	width: 100%;
+    	display: hidden;
+    }
+	ul li {
+		display: block;
+		float: none;
+		line-height: 50px;
+		margin-right: 25px;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+}
